@@ -17,7 +17,6 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php $form = ActiveForm::begin(['id' => 'form-account']); ?>
                 <?= $form->field($model, 'username')->textInput(['maxlength' => 255]) ?><br>
                 <?= $form->field($model, 'surname')->textInput(['maxlength' => 255]) ?><br>
-                <?= $form->field($model, 'email')?><br>
                 Email: <?= Html::encode("{$model->email}") ?><br><br>
                 <?= $form->field($model, 'online_status')->dropdownList([
                     AccountForm::OFFLINE => ('Offline'),
